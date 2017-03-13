@@ -37,8 +37,11 @@ namespace LamdaAlexa2
             var requestType = input.GetRequestType();
             if (requestType == typeof(IntentRequest))
             {
+                var intentRequest = input.Request as IntentRequest;
+                var countryRequested = intentRequest.Intent.Slots["Country"].Value;
+
                 return MakeSkillResponse(
-                        $"Hello Infotec! This is the first response from your Alexa skill using c sharp.",
+                        $"You'd like more information about {countryRequested}",
                         true);
             }
             else
