@@ -38,7 +38,13 @@ namespace LamdaAlexa2
             if (requestType == typeof(IntentRequest))
             {
                 var intentRequest = input.Request as IntentRequest;
-                var countryRequested = intentRequest.Intent.Slots["Country"].Value;
+                var countryRequested = intentRequest?.Intent?.Slots["Country"].Value;
+
+                if (countryRequested == null)
+                {
+                    context.Logger.LogLine($"The country was not understood.");
+                    return MakeSkillResponse("I'm sorry, but I didn't understand the country you were asking for. Please ask again.", false);
+                }
 
                 return MakeSkillResponse(
                         $"You'd like more information about {countryRequested}",
