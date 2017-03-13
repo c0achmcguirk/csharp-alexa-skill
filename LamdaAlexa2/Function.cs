@@ -48,7 +48,7 @@ namespace LamdaAlexa2
 
                 var countryInfo = await GetCountryInfo(countryRequested, context);
 
-                var outputText = $"You'd like more information about {countryInfo.name}. The capitol is {countryInfo.capital}.";
+                var outputText = $"About {countryInfo.name}. The capitol is {countryInfo.capital}, and the population is {countryInfo.population}.";
 
                 return MakeSkillResponse(outputText, true);
             }
