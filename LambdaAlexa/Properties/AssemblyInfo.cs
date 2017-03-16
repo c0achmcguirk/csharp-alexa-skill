@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LamdaAlexa2")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("LambdaAlexa")]
+[assembly: AssemblyDescription("CSharp Alexa Skill")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LamdaAlexa2")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCompany("Olivetek")]
+[assembly: AssemblyProduct("LambdaAlexa")]
+[assembly: AssemblyCopyright("Copyright ©  2017 Paul Oliver")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
