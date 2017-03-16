@@ -1,13 +1,17 @@
-# AWS Lambda Empty Function Project
+# CSharp Alexa Skill
 
-This starter project consists of:
+This project was created by Paul Oliver to demonstrate how you can write an Alexa Skill using CSharp running on AWS Lambda.
+
+The Skill is called **Country Info**. It returns the capital and population of a country asked by the user.
+
+**Alexa, ask Country Info about Canada**
+
+*About Canada. The capital is Ottawa and the population is 36,155,487.*
+
+This project consists of:
 * Function.cs - class file containing a class with a single function handler method
 * aws-lambda-tools-defaults.json - default argument settings for use with Visual Studio and command line deployment tools for AWS
 * project.json - .NET Core project file with build and tool declarations for the Amazon.Lambda.Tools Nuget package
-
-You may also have a test project depending on the options selected.
-
-The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
 
 ## Here are some steps to follow from Visual Studio:
 
@@ -16,8 +20,6 @@ To deploy your function to AWS Lambda, right click the project in Solution Explo
 To view your deployed function open its Function View window by double-clicking the function name shown beneath the AWS Lambda node in the AWS Explorer tree.
 
 To perform testing against your deployed function use the Test Invoke tab in the opened Function View window.
-
-To configure event sources for your deployed function, for example to have your function invoked when an object is created in an Amazon S3 bucket, use the Event Sources tab in the opened Function View window.
 
 To update the runtime configuration of your deployed function use the Configuration tab in the opened Function View window.
 
@@ -29,18 +31,12 @@ Once you have edited your function you can use the following command lines to bu
 
 Restore dependencies
 ```
-    cd "EmptyFunction"
+    cd "LambdaAlexa"
     dotnet restore
-```
-
-Execute unit tests
-```
-    cd "EmptyFunction/test/EmptyFunction.Tests"
-    dotnet test
 ```
 
 Deploy function to AWS Lambda
 ```
-    cd "EmptyFunction/src/EmptyFunction"
+    cd "LambdaAlexa"
     dotnet lambda deploy-function
 ```
