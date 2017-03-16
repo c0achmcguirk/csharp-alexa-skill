@@ -60,7 +60,6 @@ namespace LamdaAlexa2
             }
         }
 
-
         private SkillResponse MakeSkillResponse(string outputSpeech, 
             bool shouldEndSession, 
             string repromptText = "Just say, tell me about Canada to learn more. To exit, say, exit.")
