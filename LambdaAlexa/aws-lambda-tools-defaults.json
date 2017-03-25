@@ -9,11 +9,11 @@
   ],
 
   "profile":"",
-  "region" : "",
+  "region" : "us-east-1",
   "configuration" : "Release",
   "framework" : "netcoreapp1.0",
   "function-runtime":"dotnetcore1.0",
-  "function-memory-size" : 256,
-  "function-timeout" : 30,
-  "function-handler" : "LamdaAlexa2::LamdaAlexa2.Function::FunctionHandler"
+  "function-memory-size" : 128,
+  "function-timeout" : 20,
+  "function-handler" : "LambdaAlexa::LambdaAlexa.Function::FunctionHandler"
 }
